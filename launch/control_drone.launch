@@ -1,0 +1,9 @@
+<launch>
+
+        <!-- receive image and send coord -->
+        <node pkg="my_package" name="image_reader" type="image_reader.py" />
+
+        <!-- receive coord and move drone -->
+        <node pkg="my_package" name="drone_controller" type="drone_controller.py" />
+
+</launch>
