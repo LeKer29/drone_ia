@@ -113,8 +113,11 @@ if __name__ == '__main__':
 		elif keyboard_input == 'e':
 			move.move_drone(speed=[0, 0, -0.15], orient=[0.0, 0.0, -0.2])
 
+		keyboard_input = 'n'
+		
 
-	move.move_drone(speed=[0, 0, 0], orient=[0.0, 0.0, 0.0])
+
+	
 
 
 
