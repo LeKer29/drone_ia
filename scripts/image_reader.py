@@ -21,7 +21,7 @@ class image_converter:
 		self.coord_pub = rospy.Publisher("deltas", Point, queue_size=10)
 	
 	def face_detection(self, image):
-		face_cascade = cv2.CascadeClassifier('/home/drone/drone_ws/src/my_package/scripts/haarcascade_frontalface_default.xml')
+		face_cascade = cv2.CascadeClassifier('/root/catkin_ws/src/ardrone-facetracker/scripts/haarcascade_frontalface_default.xml')
 		gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 		faces = face_cascade.detectMultiScale(gray, 1.3, 5)
 
